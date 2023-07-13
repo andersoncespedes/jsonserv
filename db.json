@@ -1,0 +1,106 @@
+{
+  "product": [
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 2
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 4
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 5
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 6
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 7
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 8
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 9
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 11
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 12
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 13
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 14
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 15
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 16
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 17
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 18
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 19
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "kadsl",
+      "author": "ksd",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
