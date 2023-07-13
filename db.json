@@ -23,11 +23,6 @@
     {
       "nombre": "jsadkas",
       "edad": 123,
-      "id": 7
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
       "id": 8
     },
     {
@@ -79,6 +74,41 @@
       "nombre": "jsadkas",
       "edad": 123,
       "id": 19
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 20
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 21
+    },
+    {
+      "nombre": "jsadkas",
+      "edad": 123,
+      "id": 22
+    },
+    {
+      "nombre": "asd",
+      "edad": "13",
+      "id": 23
+    },
+    {
+      "nombre": "sdad",
+      "edad": 342545,
+      "id": 24
+    },
+    {
+      "nombre": "dsada",
+      "edad": 324,
+      "id": 25
+    },
+    {
+      "nombre": "1",
+      "edad": 1,
+      "id": 26
     }
   ],
   "posts": [

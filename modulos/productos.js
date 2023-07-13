@@ -4,16 +4,6 @@ class Productos extends Modelo{
         super();
         this.api = "product";
     }
-    config(method, body){
-        let bod = typeof body === "number" ? null : JSON.stringify(body) 
-        return {
-            method: method,
-            headers: {
-              'Content-Type': 'application/json' // Tipo de contenido del cuerpo de la solicitud
-            },
-            body: bod // Convertir el objeto a formato JSON
-          };
-    }
     async getProducts(){
         try{
             const req = await fetch(this.http + this.api);
