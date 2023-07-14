@@ -1,12 +1,19 @@
-import rutas from "./rutas.js";
+import rutas from "./rutasController.js";
 const borrar       = document.getElementById("borrar");
 const elementRutas = document.getElementById("rutas");
-const formulario   = document.getElementById("GuardarR");
+
 const select       = document.getElementById("rutas");
 const puntos       = document.getElementById("puntos");
 
-
-select.addEventListener("change",async (ev) => {
+window.onload = async function(){
+    const rutasDatos       = await rutas.getRutas();
+    elementRutas.innerHTML = "";
+    rutasDatos.forEach(element => {
+        elementRutas.innerHTML += `
+            <option value = "${element.id}" onclick= "buscar(this)">${element.NomRuta}</option>`; 
+    })
+}
+select.addEventListener("click",async (ev) => {
     puntos.innerHTML = ""
     const id         = parseInt( ev.target.value ) 
     const valores    = await rutas.getRelateTable(id);
@@ -27,22 +34,3 @@ select.addEventListener("change",async (ev) => {
         `;
     })
 })
-
-window.onload = async function(){
-    const rutasDatos       = await rutas.getRutas();
-    elementRutas.innerHTML = "";
-    rutasDatos.forEach(element => {
-        elementRutas.innerHTML += `
-            <option value = "${element.id}" onclick= "buscar(this)">${element.NomRuta}</option>`; 
-    })
-}
-
-formulario.addEventListener("submit",async (ev) => {
-    ev.preventDefault();
-    console.log(formulario.nombreRuta.value);
-    const obj = {
-        "NomRuta":formulario.nombreRuta.value,
-    }
-    await rutas.postRutas(obj);
-})
-
