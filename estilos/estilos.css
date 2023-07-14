@@ -1,0 +1,8 @@
+#rutas {
+    list-style: none;
+    margin-bottom: 2px;
+}
+#rutas li{
+    display: inline-flex;
+    margin: 10px;
+}

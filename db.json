@@ -1,136 +1,68 @@
 {
-  "product": [
+  "Ruta": [
     {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 2
+      "id": 1,
+      "NomRuta": "Cafetera"
     },
     {
-      "nombre": "jsadkas",
-      "edad": 123,
+      "id": 2,
+      "NomRuta": "Del Sol"
+    },
+    {
+      "NomRuta": "asd",
+      "id": 3
+    },
+    {
+      "NomRuta": "asd",
       "id": 4
     },
     {
-      "nombre": "jsadkas",
-      "edad": 123,
+      "NomRuta": "cxvz",
       "id": 5
     },
     {
-      "nombre": "jsadkas",
-      "edad": 123,
+      "NomRuta": "asdfdsgdgs",
       "id": 6
     },
     {
-      "nombre": "jsadkas",
-      "edad": 123,
+      "NomRuta": "anderson",
+      "id": 7
+    },
+    {
+      "NomRuta": "13454",
       "id": 8
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 9
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 11
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 12
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 13
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 14
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 15
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 16
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 17
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 18
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 19
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 20
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 21
-    },
-    {
-      "nombre": "jsadkas",
-      "edad": 123,
-      "id": 22
-    },
-    {
-      "nombre": "asd",
-      "edad": "13",
-      "id": 23
-    },
-    {
-      "nombre": "sdad",
-      "edad": 342545,
-      "id": 24
-    },
-    {
-      "nombre": "dsada",
-      "edad": 324,
-      "id": 25
-    },
-    {
-      "nombre": "1",
-      "edad": 1,
-      "id": 26
     }
   ],
-  "posts": [
+  "Puntos": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "NomPuntos": "Manizales",
+      "RutaId": 1,
+      "Imagen": "https://colombia.com/bucaramanga.jpg"
     },
     {
-      "title": "kadsl",
-      "author": "ksd",
-      "id": 2
-    }
-  ],
-  "comments": [
+      "id": 2,
+      "NomPuntos": "Armenia",
+      "RutaId": 1,
+      "Imagen": "https://colombia.com/barranca.jpg"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 3,
+      "NomPuntos": "Tunja",
+      "RutaId": 2,
+      "Imagen": "https://colombia.com/bogota.jpg"
+    },
+    {
+      "id": 4,
+      "NomPuntos": "Bucaramanga",
+      "RutaId": 2,
+      "Imagen": "https://colombia.com/cajica.jpg"
+    },
+    {
+      "id": 5,
+      "NomPuntos": "Petro",
+      "RutaId": 2,
+      "Imagen": "https://colombia.com/cajica.jpg"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
