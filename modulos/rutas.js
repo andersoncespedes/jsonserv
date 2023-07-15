@@ -1,4 +1,3 @@
-
 import rutas from "./rutasController.js";
 const formulario   = document.getElementById("GuardarR");
 const table        = document.getElementById("table");

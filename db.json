@@ -2,51 +2,15 @@
   "Ruta": [
     {
       "id": 2,
-      "NomRuta": "zxc"
-    },
-    {
-      "NomRuta": "cz",
-      "id": 3
+      "NomRuta": "christian"
     },
     {
       "NomRuta": "ayuda",
       "id": 4
     },
     {
-      "NomRuta": "cxvz",
+      "NomRuta": "anderson",
       "id": 5
-    },
-    {
-      "NomRuta": "ca",
-      "id": 6
-    },
-    {
-      "NomRuta": "pesa",
-      "id": 7
-    },
-    {
-      "NomRuta": "asd",
-      "id": 8
-    },
-    {
-      "NomRuta": "cz",
-      "id": 9
-    },
-    {
-      "NomRuta": "cz",
-      "id": 10
-    },
-    {
-      "NomRuta": "cz",
-      "id": 11
-    },
-    {
-      "NomRuta": "sasads",
-      "id": 12
-    },
-    {
-      "NomRuta": "asd",
-      "id": 13
     }
   ],
   "Puntos": [
