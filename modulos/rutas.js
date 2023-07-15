@@ -1,4 +1,6 @@
 import rutas from "./rutasController.js";
+import puntos from "./puntosController.js";
+
 const formulario   = document.getElementById("GuardarR");
 const table        = document.getElementById("table");
 const formAct      = document.getElementById("ActRuta")
@@ -24,7 +26,11 @@ window.onload = async function(){
 }
 async function eliminarRuta(param){
     const id = parseInt( param.target.getAttribute("id").match(/[0-9]/gi).join(""));
-    await rutas.deleteRutas(id);
+    const puntosTarget = await (await puntos.getPuntos());
+    let filtroPuntos = puntosTarget.filter(e => e.RutaId == id);
+    
+    await (await filtroPuntos.forEach(async e => {await (await puntos.deletePuntos(e.id));}))
+    await (await rutas.deleteRutas(id));
 }
 function actualizarRuta(param){
     const id = parseInt( param.target.getAttribute("id").match(/[0-9]/gi).join(""));
@@ -37,7 +43,7 @@ formulario.addEventListener("submit",async (ev) => {
     const obj = {
         "NomRuta":formulario.nombreRuta.value,
     }
-    await rutas.postRutas(obj);
+    await (await rutas.postRutas(obj));
 })
 
 formAct.addEventListener("submit", async (ev) => {

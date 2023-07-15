@@ -7,7 +7,7 @@ const puntos       = document.getElementById("puntos");
 
 window.onload = async function(){
     const rutasDatos       = await rutas.getRutas();
-    elementRutas.innerHTML = "";
+    elementRutas.innerHTML = "<option>Selecione una ruta</option>";
     rutasDatos.forEach(element => {
         elementRutas.innerHTML += `
             <option value = "${element.id}" onclick= "buscar(this)">${element.NomRuta}</option>`; 

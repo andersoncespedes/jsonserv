@@ -33,10 +33,12 @@ class Puntos extends Modelo{
     }
     async UpdatePuntos(body,id){
         try{
-            const req = await fetch(`${this.http}${this.api}/${id}`, this.config("PATCH", body));
+            const req = await fetch(`${this.http}${this.api}/${id}`, this.config("PUT", body));
             const datos = await req.json();
         }catch(err){
             console.log(err);
         }
     }
 }
+const puntos = new Puntos();
+export default puntos;
