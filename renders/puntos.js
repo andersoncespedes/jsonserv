@@ -1,5 +1,5 @@
-import rutas from "./rutasController.js";
-import puntos from "./puntosController.js";
+import rutas from "../modulos/rutasController.js";
+import puntos from "../modulos/puntosController.js";
 
 const formulario = document.getElementById("GuardarP");
 const tabla      = document.getElementById("table");
@@ -9,7 +9,7 @@ window.onload = async function(){
     const datosPuntos = await puntos.getPuntos();
     datosRutas.forEach(element => {
         formulario.rutas.innerHTML += `<option value= "${element.id}">${element.NomRuta}</option>`;
-        formAct.rutas.innerHTML += `<option value= "${element.id}">${element.NomRuta}</option>`;
+        formAct.rutas.innerHTML    += `<option value= "${element.id}">${element.NomRuta}</option>`;
     });
     datosPuntos.forEach(element => {
         let row      = tabla.insertRow(0)

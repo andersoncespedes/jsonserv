@@ -6,3 +6,15 @@
     display: inline-flex;
     margin: 10px;
 }
+body{
+    background-color: rgb(238, 238, 238);
+}
+.back{
+    background-color: rgb(255, 255, 255);
+}
+.rImg{
+    max-height: 400px;
+    min-height: 400px;
+
+    width: 100%;
+}

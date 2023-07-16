@@ -1,5 +1,5 @@
-import rutas from "./rutasController.js";
-import puntos from "./puntosController.js";
+import rutas from "../modulos/rutasController.js";
+import puntos from "../modulos/puntosController.js";
 
 const formulario   = document.getElementById("GuardarR");
 const table        = document.getElementById("table");

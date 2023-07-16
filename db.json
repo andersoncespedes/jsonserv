@@ -1,9 +1,32 @@
 {
   "Ruta": [
     {
-      "NomRuta": "zxcz",
-      "id": 2
+      "NomRuta": "jhooooo",
+      "id": 3
+    },
+    {
+      "NomRuta": "sfsfsgf",
+      "id": 4
     }
   ],
-  "Puntos": []
+  "Puntos": [
+    {
+      "NomPuntos": "jhoan",
+      "RutaId": "3",
+      "imagen": "https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500\t",
+      "id": 2
+    },
+    {
+      "NomPuntos": "juansisa",
+      "RutaId": "4",
+      "imagen": "https://www.xtrafondos.com/wallpapers/vertical/diseno-de-paisaje-del-espacio-5771.jpg",
+      "id": 3
+    },
+    {
+      "NomPuntos": "pesares",
+      "RutaId": "3",
+      "imagen": "https://image.winudf.com/v2/image1/c2F0c3VtYS5uYXR1cmUud2FsbHBhcGVyc19zY3JlZW5fMF8xNTQyMDM4MzcyXzAwMw/screen-0.webp?fakeurl=1&type=.webp",
+      "id": 4
+    }
+  ]
 }

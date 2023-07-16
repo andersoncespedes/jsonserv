@@ -1,7 +1,6 @@
 class Modelo{
     constructor(){
         this.http = "http://localhost:3000/";
-        this.http2 = "http://localhost:3001/"
     }
     config(method, body){
         let bod = typeof body === "number" ? null : JSON.stringify(body) 

@@ -24,8 +24,8 @@ class Puntos extends Modelo{
     }
     async deletePuntos(id){
         try{
-            const req = await fetch(`${this.http}${this.api}/${id}`, this.config("DELETE", id));
-            const datos = await req.json();
+            const req = await (await fetch(`${this.http}${this.api}/${id}`, this.config("DELETE", id)));
+            const datos = await (await req.json());
             return datos;
         }catch(err){
             console.log(err);
