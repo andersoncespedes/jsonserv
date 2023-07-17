@@ -5,8 +5,12 @@
       "id": 3
     },
     {
-      "NomRuta": "sfsfsgf",
+      "NomRuta": "zczxc",
       "id": 4
+    },
+    {
+      "NomRuta": "xcsadaf",
+      "id": 5
     }
   ],
   "Puntos": [
@@ -27,6 +31,18 @@
       "RutaId": "3",
       "imagen": "https://image.winudf.com/v2/image1/c2F0c3VtYS5uYXR1cmUud2FsbHBhcGVyc19zY3JlZW5fMF8xNTQyMDM4MzcyXzAwMw/screen-0.webp?fakeurl=1&type=.webp",
       "id": 4
+    },
+    {
+      "NomPuntos": "juansisa",
+      "RutaId": "4",
+      "imagen": "https://wallpaperslinks.com/wp-content/uploads/2019/01/nat86-1.jpg",
+      "id": 5
+    },
+    {
+      "NomPuntos": "juansisa",
+      "RutaId": "4",
+      "imagen": "https://wallpaperslinks.com/wp-content/uploads/2019/01/nat86-1.jpg",
+      "id": 6
     }
   ]
 }

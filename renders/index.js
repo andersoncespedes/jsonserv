@@ -42,15 +42,17 @@ select.addEventListener("change",async (ev) => {
     }
     else{
         let valores    = await rutas.getRelateTable(parseInt(id) );
+        if(valores.length == 0){
+            puntosHtml.innerHTML += `No Existen Datos Para Esta Ruta`
+        }
         valores.forEach(e => {
             puntosHtml.innerHTML += `
-            <div class = "col-md-4 mt-3">
+            <div class = "col-md-4 mt-3 text-center">
                 <div class = "card">
                     <div class="card-body">
                         <img src = "${e.imagen}" class="rImg">
                         <br>
                         <h4 class= "card-head">${e.NomPuntos}</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>

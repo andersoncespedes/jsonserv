@@ -20,7 +20,7 @@ window.onload = async function(){
         let t5       = row.insertCell(4);
         t1.innerHTML = element.id;
         t2.innerHTML = element.NomPuntos;
-        t3.innerHTML = element.imagen;
+        t3.innerHTML = "direccion";
         t4.innerHTML = element.RutaId;
         t5.innerHTML = `
         <button id = "delete${element.id}" class = "btn btn-danger">Eliminar</button>
