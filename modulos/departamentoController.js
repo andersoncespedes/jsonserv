@@ -1,11 +1,11 @@
 import Modelo from './modelo.js';
-class Rutas extends Modelo{
+class Departamento extends Modelo{
     constructor(){
         super();
-        this.api = "Ruta";
-        this.relation = "Puntos"
+        this.api = "Departamentos";
+        this.relation = "Ciudades"
     }
-    async getRutas(){
+    async getDepartamentos(){
         try{
             const req = await fetch(`${this.http}${this.api}`);
             const datos = await req.json();
@@ -14,7 +14,16 @@ class Rutas extends Modelo{
             console.log(err);
         }
     }
-    async postRutas(body){
+    async getDepartamentoById(id){
+        try{
+            const req = await fetch(`${this.http}${this.api}/${id}`);
+            const datos = await req.json();
+            return datos;
+        }catch(err){
+            console.log(err);
+        }
+    }
+    async postDepartamento(body){
         try{
             const req = await fetch(`${this.http}${this.api}`, this.config("POST", body));
             const datos = await req.json();
@@ -23,7 +32,7 @@ class Rutas extends Modelo{
             console.log(err);
         }
     }
-    async deleteRutas(id){
+    async deleteDepartamento(id){
         try{
             const req = await fetch(`${this.http}${this.api}/${id}`, this.config("DELETE", id));
             const datos = await req.json();
@@ -41,7 +50,7 @@ class Rutas extends Modelo{
             console.log(err);
         }
     }
-    async UpdateRutas(body,id){
+    async UpdateDepartamento(body,id){
         try{
             const req = await fetch(`${this.http}${this.api}/${id}`, this.config("PATCH", body));
             const datos = await req.json();
@@ -50,5 +59,5 @@ class Rutas extends Modelo{
         }
     }
 }
-const rutas = new Rutas();
-export default rutas;
+const departamento = new Departamento();
+export default departamento;

@@ -1,10 +1,10 @@
 import Modelo from './modelo.js';
-class Puntos extends Modelo{
+class Ciudad extends Modelo{
     constructor(){
         super();
-        this.api = "Puntos";
+        this.api = "Ciudades";
     }
-    async getPuntos(){
+    async getCiudades(){
         try{
             const req = await fetch(`${this.http}${this.api}`);
             const datos = await req.json();
@@ -13,7 +13,16 @@ class Puntos extends Modelo{
             console.log(err);
         }
     }
-    async postPuntos(body){
+    async getCiudadById(id){
+        try{
+            const req = await fetch(`${this.http}${this.api}/${id}`);
+            const datos = await req.json();
+            return datos;
+        }catch(err){
+            console.log(err);
+        }
+    }
+    async postCiudad(body){
         try{
             const req = await fetch(`${this.http}${this.api}`, this.config("POST", body));
             const datos = await req.json();
@@ -22,7 +31,7 @@ class Puntos extends Modelo{
             console.log(err);
         }
     }
-    async deletePuntos(id){
+    async deleteCiudad(id){
         try{
             const req = await (await fetch(`${this.http}${this.api}/${id}`, this.config("DELETE", id)));
             const datos = await (await req.json());
@@ -31,7 +40,7 @@ class Puntos extends Modelo{
             console.log(err);
         }
     }
-    async UpdatePuntos(body,id){
+    async UpdateCiudad(body,id){
         try{
             const req = await fetch(`${this.http}${this.api}/${id}`, this.config("PUT", body));
             const datos = await req.json();
@@ -40,5 +49,5 @@ class Puntos extends Modelo{
         }
     }
 }
-const puntos = new Puntos();
-export default puntos;
+const ciudad = new Ciudad();
+export default ciudad;

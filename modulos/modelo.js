@@ -1,6 +1,7 @@
 class Modelo{
     constructor(){
         this.http = "http://localhost:3000/";
+        this.api  =  "https://api.openweathermap.org/data/2.5/weather?";
     }
     config(method, body){
         let bod = typeof body === "number" ? null : JSON.stringify(body) 

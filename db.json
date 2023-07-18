@@ -1,48 +1,44 @@
 {
-  "Ruta": [
+  "Departamentos": [
     {
-      "NomRuta": "jhooooo",
-      "id": 3
+      "id": 1,
+      "nomDepartamento": "Santander"
     },
     {
-      "NomRuta": "zczxc",
-      "id": 4
-    },
-    {
-      "NomRuta": "xcsadaf",
-      "id": 5
+      "id": 2,
+      "nomDepartamento": "Cundinamarca"
     }
   ],
-  "Puntos": [
+  "Ciudades": [
     {
-      "NomPuntos": "jhoan",
-      "RutaId": "3",
-      "imagen": "https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500\t",
-      "id": 2
+      "id": 1,
+      "nomCiudad": "Bucaramanga",
+      "DepartamentoId": 1,
+      "imagen": "https://cdn.colombia.com/images/v2/turismo/sitios-turisticos/bucaramanga/ciudad-bucaramanga-800.webp",
+      "coordenadas": {
+        "lat": 4,
+        "lon": 72
+      }
     },
     {
-      "NomPuntos": "juansisa",
-      "RutaId": "4",
-      "imagen": "https://www.xtrafondos.com/wallpapers/vertical/diseno-de-paisaje-del-espacio-5771.jpg",
-      "id": 3
+      "id": 2,
+      "nomCiudad": "Barrancabermeja",
+      "DepartamentoId": 1,
+      "imagen": "https://cdn.colombia.com/images/v2/turismo/sitios-turisticos/pacifico/Las-playas-de-la-region-de-Nuqui-800.webp",
+      "coordenadas": {
+        "lat": 4,
+        "lon": 72
+      }
     },
     {
-      "NomPuntos": "pesares",
-      "RutaId": "3",
-      "imagen": "https://image.winudf.com/v2/image1/c2F0c3VtYS5uYXR1cmUud2FsbHBhcGVyc19zY3JlZW5fMF8xNTQyMDM4MzcyXzAwMw/screen-0.webp?fakeurl=1&type=.webp",
-      "id": 4
-    },
-    {
-      "NomPuntos": "juansisa",
-      "RutaId": "4",
-      "imagen": "https://wallpaperslinks.com/wp-content/uploads/2019/01/nat86-1.jpg",
-      "id": 5
-    },
-    {
-      "NomPuntos": "juansisa",
-      "RutaId": "4",
-      "imagen": "https://wallpaperslinks.com/wp-content/uploads/2019/01/nat86-1.jpg",
-      "id": 6
+      "id": 3,
+      "nomCiudad": "Bogotá",
+      "DepartamentoId": 2,
+      "imagen": "https://cdn.colombia.com/images/v2/turismo/sitios-turisticos/bogota/ciudad-bogota-800.webp",
+      "coordenadas": {
+        "lat": 4,
+        "lon": 72
+      }
     }
   ]
 }
